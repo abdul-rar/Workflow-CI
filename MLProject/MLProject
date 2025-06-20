@@ -1,0 +1,9 @@
+name: energy_consumption_retraining
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters: {}
+    command: >
+      python modelling_tuning.py
