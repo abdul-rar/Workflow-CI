@@ -80,8 +80,12 @@ with mlflow.start_run():
     )
 
     # Copy artifacts to folder outside
+    EXPERIMENT_NAME = "Energy Consumption - Tuning"
+
     run_id = mlflow.active_run().info.run_id
-    experiment_id = mlflow.get_experiment_by_name("Energy Consumption - Tuning").experiment_id
+    mlflow.set_experiment(EXPERIMENT_NAME)
+    experiment = mlflow.get_experiment_by_name(EXPERIMENT_NAME)
+    experiment_id = experiment.experiment_id
 
     model_source_path = os.path.join("mlruns", experiment_id, run_id, "artifacts", "model")
     model_target_path = os.path.join("..", "artifacts")
