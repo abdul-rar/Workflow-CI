@@ -57,7 +57,7 @@ test_mse = mean_squared_error(y_test, y_test_pred)
 test_rmse = np.sqrt(test_mse)
 test_r2 = r2_score(y_test, y_test_pred)
 
-# Manual logging seperti autolog
+# Manual logging
 mlflow.log_metric("training_mean_absolute_error", train_mae)
 mlflow.log_metric("training_mean_squared_error", train_mse)
 mlflow.log_metric("training_root_mean_squared_error", train_rmse)
