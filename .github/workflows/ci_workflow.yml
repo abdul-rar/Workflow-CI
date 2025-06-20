@@ -9,7 +9,7 @@ on:
       - main
  
 env:
-  CSV_URL: "MLproject/enery_consumption_preprocessing/train_preprocessing.csv"
+  CSV_URL: "MLProject/enery_consumption_preprocessing/train_preprocessing.csv"
  
 jobs:
   build:
