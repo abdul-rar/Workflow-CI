@@ -39,7 +39,7 @@ grid_search = GridSearchCV(
 grid_search.fit(X_train, y_train)
 best_model = grid_search.best_estimator_
 
-# Start MLflow run (Wajib agar bisa log dan ambil run_id)
+mlflow.set_tracking_uri("file:./mlruns")
 with mlflow.start_run():
     # Log params
     mlflow.log_param("model", "RandomForestRegressor")
