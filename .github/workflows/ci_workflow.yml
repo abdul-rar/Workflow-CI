@@ -30,7 +30,7 @@ jobs:
     - name: Run mlflow project
       working-directory: ./MLProject
       run: |
-        mlflow run MLProject
+        mlflow run . --no-conda
 
     - name: Get latest MLflow run_id
       id: get_run
