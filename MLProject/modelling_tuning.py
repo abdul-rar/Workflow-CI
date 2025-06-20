@@ -79,20 +79,20 @@ with mlflow.start_run():
         input_example=X_train.iloc[:5]
     )
 
-    # Copy artifacts to folder outside
-    EXPERIMENT_NAME = "Energy Consumption - Tuning"
+    # # Copy artifacts to folder outside
+    # EXPERIMENT_NAME = "Energy Consumption - Tuning"
 
-    run_id = mlflow.active_run().info.run_id
-    mlflow.set_experiment(EXPERIMENT_NAME)
-    experiment = mlflow.get_experiment_by_name(EXPERIMENT_NAME)
-    experiment_id = experiment.experiment_id
+    # run_id = mlflow.active_run().info.run_id
+    # mlflow.set_experiment(EXPERIMENT_NAME)
+    # experiment = mlflow.get_experiment_by_name(EXPERIMENT_NAME)
+    # experiment_id = experiment.experiment_id
 
-    model_source_path = os.path.join("mlruns", experiment_id, run_id, "artifacts", "model")
-    model_target_path = os.path.join("..", "artifacts")
+    # model_source_path = os.path.join("mlruns", experiment_id, run_id, "artifacts", "model")
+    # model_target_path = os.path.join("..", "artifacts")
 
-    os.makedirs(model_target_path, exist_ok=True)
-    for filename in os.listdir(model_source_path):
-        shutil.copy(
-            os.path.join(model_source_path, filename),
-            os.path.join(model_target_path, filename)
-        )
+    # os.makedirs(model_target_path, exist_ok=True)
+    # for filename in os.listdir(model_source_path):
+    #     shutil.copy(
+    #         os.path.join(model_source_path, filename),
+    #         os.path.join(model_target_path, filename)
+    #     )
