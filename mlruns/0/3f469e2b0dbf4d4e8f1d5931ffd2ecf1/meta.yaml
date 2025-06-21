@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/3f469e2b0dbf4d4e8f1d5931ffd2ecf1/artifacts
+end_time: 1750465709687
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3f469e2b0dbf4d4e8f1d5931ffd2ecf1
+run_name: aged-crow-283
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750465701851
+status: 3
+tags: []
+user_id: runner
