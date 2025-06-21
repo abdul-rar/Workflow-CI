@@ -49,7 +49,6 @@ if __name__ == "__main__":
     grid_search.fit(X_train, y_train)
     best_model = grid_search.best_estimator_
 
-    mlflow.set_tracking_uri("file:./mlruns")
     with mlflow.start_run():
         # Log params
         mlflow.log_param("model", "RandomForestRegressor")
