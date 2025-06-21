@@ -65,19 +65,19 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
 
       - name: Tag Docker Image
         run: |
-          docker tag ec_model ${{ secrets.DOCKER_HUB_USERNAME }}/ec_model:latest
+          docker tag ec_model ${{ secrets.DOCKERHUB_USERNAME }}/ec_model:latest
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/ec_model:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ec_model:latest
 
       - name: Post log in to Docker Hub
         run: |
           echo "Docker image pushed to Docker Hub successfully."
-          echo "Docker image: ${{ secrets.DOCKER_HUB_USERNAME }}/ec_model:latest"
+          echo "Docker image: ${{ secrets.DOCKERHUB_USERNAME }}/ec_model:latest"
         
