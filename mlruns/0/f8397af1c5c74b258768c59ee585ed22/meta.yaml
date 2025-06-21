@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/f8397af1c5c74b258768c59ee585ed22/artifacts
+end_time: 1750465924848
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f8397af1c5c74b258768c59ee585ed22
+run_name: adorable-carp-127
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750465917094
+status: 3
+tags: []
+user_id: runner
