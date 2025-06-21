@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/9932f5afa2da40aa85bd8742ebcb183b/artifacts
+end_time: 1750467894309
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9932f5afa2da40aa85bd8742ebcb183b
+run_name: stylish-eel-746
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750467886437
+status: 3
+tags: []
+user_id: runner
