@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/ba901505799844778eb318c47114b7b5/artifacts
+end_time: 1750468519764
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba901505799844778eb318c47114b7b5
+run_name: crawling-moose-99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750468512032
+status: 3
+tags: []
+user_id: runner
